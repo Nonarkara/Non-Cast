@@ -1,0 +1,43 @@
+# Secrets and local identity — never commit these
+.env
+*.pem
+*.key
+reference.wav
+**/reference.wav
+voices/*.wav
+voices/*.mp3
+voices/*.flac
+voices/*.ogg
+
+# Runtime data
+data/
+.noncast/
+public/episodes/
+public/feed.xml
+
+# Generated audio
+*.mp3
+*.wav
+!tests/fixtures/**
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors / OS
+.DS_Store
+.idea/
+.vscode/
+*.swp

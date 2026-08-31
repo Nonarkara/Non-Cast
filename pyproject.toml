@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noncast"
+version = "0.1.0"
+description = "Fork this kit, add your corpus, get a daily podcast. Agent-agnostic."
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+authors = [{ name = "Non-Cast contributors" }]
+keywords = ["podcast", "rss", "rag", "tts", "agent-agnostic"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0"]
+vec = ["sqlite-vec>=0.1.0"]
+
+[project.scripts]
+noncast = "noncast.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Nonarkara/Non-Cast"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+noncast = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
