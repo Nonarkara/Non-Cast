@@ -1,0 +1,59 @@
+# Generic show identity. Replace every string here when you fork.
+# Non-Cast never assumes a vendor, a host name, or a face.
+
+[show]
+name = "Daily Brief"
+author = "Host"
+description = "A daily spoken brief generated from a local writing corpus and optional RSS beats."
+language = "en"
+site_url = "https://example.com/brief"
+feed_path = "public/feed.xml"
+email = "host@example.com"
+explicit = false
+category = "Technology"
+
+[persona]
+name = "Host"
+bio = "A precise host who only speaks from the local corpus and fetched sources."
+style = "conversational, short sentences, no invented facts"
+
+[pipeline]
+default_duration_minutes = 12
+target_wpm = 155
+max_sentence_words = 30
+coverage_threshold = 0.95
+story_dedup_days = 3
+rss_timeout_seconds = 8
+rss_retries = 2
+default_publish = false
+
+[rss]
+# Empty = corpus-only episodes (works fully offline). Add feed URLs for news.
+feeds = []
+
+[rag]
+corpus_dir = "corpus"
+index_path = "data/rag.sqlite"
+chunk_size = 400
+chunk_overlap = 60
+# auto: sqlite-vec if installed, otherwise tf-idf
+backend = "auto"
+top_k = 8
+
+[voice]
+# f5-tts-mlx is local on Apple Silicon. elevenlabs / openai are HTTP stubs.
+# "none" skips synthesis. Non-Cast will not fall back to system voices (say/espeak).
+backend = "none"
+id = "host-primary"
+reference_wav = "voices/reference.wav"
+refuse_system_fallback = true
+
+[llm]
+backend = "ollama"
+model = "llama3.2"
+base_url = "http://127.0.0.1:11434"
+timeout_seconds = 30
+
+[publish]
+output_dir = "public"
+media_dir = "public/episodes"

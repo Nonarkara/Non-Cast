@@ -1,0 +1,36 @@
+# One pattern per line. Optional tab + replacement.
+# Empty replacement deletes the token. Matching is case-insensitive.
+# These are TTS-unfriendly filler, stock LLM tells, and banned meta.
+
+delve	look
+tapestry	mix
+furthermore	also
+moreover	also
+utilize	use
+leverage	use
+literally
+very unique	unique
+as an ai
+as a language model
+in conclusion	to close
+unpack	explain
+landscape	field
+robust	solid
+cutting-edge	new
+it goes without saying
+needless to say
+game changer	shift
+at the end of the day
+in today's fast-paced
+ladies and gentlemen
+dear listener, let's dive
+let's dive in	let's begin
+unlock
+empower
+synergy
+paradigm
+holistic
+revolutionize	change
+delved	looked
+utilizing	using
+leveraging	using
