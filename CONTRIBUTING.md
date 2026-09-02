@@ -2,6 +2,8 @@
 
 Non-Cast is a **kit**. Forkers supply identity. Keep the defaults generic.
 
+Licensed under MIT. Copyright © 2026 Non Arkaraprasertkul / Axiom X Co., Ltd. See [LICENSE](LICENSE).
+
 ## Setup
 
 ```bash

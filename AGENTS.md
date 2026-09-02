@@ -67,4 +67,4 @@ Outputs for a date land in `data/runs/YYYY-MM-DD/` (`stories.json`, `analysis.js
 
 ## If you are lost
 
-Read `README.md` (10-minute path + mermaid) and `docs/architecture.md` (stage I/O). Run `noncast --help` and `noncast status`. Prefer editing one pipeline module over adding a new framework.
+Read `README.md` (hero, then What this is → Philosophy → Ethical use → How to use → mermaid) and `docs/architecture.md` (stage I/O). Run `noncast --help` and `noncast status`. Prefer editing one pipeline module over adding a new framework.
