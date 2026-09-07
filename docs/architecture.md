@@ -10,7 +10,7 @@ flowchart TB
     Toml["noncast.toml"]
     Corpus["corpus/*.md"]
     Clip["voices/reference.wav gitignored"]
-    Hero["docs/hero.png example art"]
+    Hero["docs/hero.png studio banner"]
   end
   subgraph engine["Engine"]
     CLI["noncast CLI / python -m noncast.pipeline"]

@@ -9,7 +9,7 @@ description = "Fork this kit, add your corpus, get a daily podcast. Agent-agnost
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.11"
-authors = [{ name = "Non-Cast contributors" }]
+authors = [{ name = "Non Arkaraprasertkul" }]
 keywords = ["podcast", "rss", "rag", "tts", "agent-agnostic"]
 classifiers = [
   "License :: OSI Approved :: MIT License",
